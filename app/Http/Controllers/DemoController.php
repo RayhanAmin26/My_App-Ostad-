@@ -17,6 +17,7 @@ class DemoController extends Controller
         //return array(["name"=>"Rayhan","City"=>"Dhaka","Country"=>"Bangladesh"]);
         // return response()->json(["name"=>"Rayhan","City"=>"Dhaka","Country"=>"Bangladesh"]);
         // return response()->json(["name"=>"Rayhan","City"=>"Dhaka","Country"=>"Bangladesh"],status:203);
+        return redirect("/");
 
     }
 }
