@@ -17,7 +17,10 @@ class DemoController extends Controller
         //return array(["name"=>"Rayhan","City"=>"Dhaka","Country"=>"Bangladesh"]);
         // return response()->json(["name"=>"Rayhan","City"=>"Dhaka","Country"=>"Bangladesh"]);
         // return response()->json(["name"=>"Rayhan","City"=>"Dhaka","Country"=>"Bangladesh"],status:203);
-        return redirect("/");
+        // return redirect("/");
+        // return response()->file(file:"img.png");
+        //return response()->download(file:"img.png");
+        return view(view:'demo');
 
     }
 }
