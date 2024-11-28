@@ -11,4 +11,6 @@ Route::get('/', function () {
 Route::get('/demo1',[DemoController::class,'demo1']);
 
 //Laravel Request
-Route::get('/demo2',[DemoController::class,'demo2']);
+Route::get('/demo2/{name}/{city}',[DemoController::class,'demo2']);
+Route::post('/demo3',[DemoController::class,'demo3']);
+Route::post('/demo4',[DemoController::class,'demo4']);

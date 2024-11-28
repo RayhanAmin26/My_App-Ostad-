@@ -24,8 +24,25 @@ class DemoController extends Controller
 
     // }
 
-    function demo2(){
-        return "Hello";
+    // function demo2(Request $request){
+    //     // $qry=$request->query();
+    //     // return "$qry";
 
+    //     $name=$request->name;
+    //     $city=$request->city;
+    //       return $name;
+
+    // }
+
+    function demo3(Request $request){
+        $JSONBody=$request->input();
+        return $JSONBody;
+
+
+    }
+
+    function demo4(Request $request){
+        $HEAD=$request->header();
+        return $HEAD;
     }
 }
