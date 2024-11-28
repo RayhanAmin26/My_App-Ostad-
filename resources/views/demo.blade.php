@@ -1,1 +1,1 @@
-<h1>Hello I AM Blade View</h1>
+<h1>Hello I AM Blade view</h1>
