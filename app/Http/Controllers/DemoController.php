@@ -45,4 +45,18 @@ class DemoController extends Controller
         $HEAD=$request->header();
         return $HEAD;
     }
+
+    
+    function demo5(Request $request){
+        $Key1=$request->input('key1');
+        $Key2=$request->input('key2');
+        return $Key1;
+    }
+
+    function demo6(Request $request){
+        $myFile=$request->file('myFile');
+        $myFile->move(public_path('upload'),$myFile->getClientOriginalName());
+        return "Success";
+
+    }
 }
