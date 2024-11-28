@@ -58,5 +58,10 @@ class DemoController extends Controller
         $myFile->move(public_path('upload'),$myFile->getClientOriginalName());
         return "Success";
 
+
     }
+
+    function demo7(Request $request){
+        return $request->ip();
+       
 }
